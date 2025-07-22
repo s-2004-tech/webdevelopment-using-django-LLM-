@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Question History{% endblock %}
+
+{% block content %}
+
+<h2>Question History</h2>
+
+<table class="table table-striped">
+
+<thead>
+
+<tr>
+
+<th>File</th>
+
+<th>Question</th>
+
+<th>Answer</th>
+
+<th>Asked On</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for entry in history %}
+
+<tr>
+
+<td>{{ entry.file.filename }}</td>
+
+<td>{{ entry.question }}</td>
+
+<td>{{ entry.answer }}</td>
+
+<td>{{ entry.asked_at }}</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+{% endblock %}

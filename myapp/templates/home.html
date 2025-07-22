@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>SmartQA - Home</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+
+<header class="bg-primary text-white text-center py-5">
+
+<div class="container">
+
+<h1 class="display-4">Welcome to SmartQA</h1>
+
+<p class="lead">Ask intelligent questions from your documents!</p>
+
+</div>
+
+</header>
+
+
+<section class="container my-5">
+
+<div class="row g-4">
+
+<div class="col-md-6">
+
+<h2>What is SmartQA?</h2>
+
+<p>SmartQA is a powerful AI-based Question Answering System that allows you to upload documents in various formats and ask questions directly based on their content.</p>
+
+</div>
+
+<div class="col-md-6">
+
+<img src="{% static 'logo.jpeg' %}" class="img-fluid rounded" style="width: 250px; height: auto;" alt="Smart QA">
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="bg-light py-5">
+
+<div class="container">
+
+<h3 class="text-center mb-4">What can SmartQA do?</h3>
+
+<div class="row text-center">
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow-sm">
+
+<div class="card-body">
+
+<h5 class="card-title">📄 Multi-format Document Support</h5>
+
+<p class="card-text">Upload PDF, DOCX, PPTX, TXT, CSV, Excel, and JSON files for question answering.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow-sm">
+    <div class="card-body">
+
+<h5 class="card-title">❓ Intelligent Question Answering</h5>
+
+<p class="card-text">Ask natural language questions and get accurate answers from your documents using state-of-the-art LLM models.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow-sm">
+
+<div class="card-body">
+
+<h5 class="card-title">🧠 Personalized Dashboard</h5>
+
+<p class="card-text">Track your uploaded files and previous question-answer history securely in your own dashboard.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer class="bg-dark text-white text-center py-4 mt-5">
+
+<div class="container">
+
+<p class="mb-0">&copy; 2025 SmartQA. All rights reserved.</p>
+
+</div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+{% endblock %}
